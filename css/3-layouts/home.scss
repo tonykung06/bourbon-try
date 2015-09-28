@@ -1,0 +1,35 @@
+.home {
+	article {
+		@include outer-container;
+		@span-columns(8);
+		@include shift(2);
+	}
+
+	.boxes {
+		@include clearfix;
+		@include outer-container;
+	}
+
+	.box {
+		@include size(100px);
+		//@include position(absolute, 100px auto null 200px);
+		@include span-columns(3 of 12);
+		//float: left;
+		background: tint(red, 40%);
+		//margin: 20px;
+	}
+
+	p {
+		@include outer-container;
+		font-family: $helvetica;
+	}
+
+	.bullets {
+		@include outer-container;
+	}
+
+	.grid-items-lines {
+		@include outer-container;
+		margin-bottom: 100px;
+	}
+}

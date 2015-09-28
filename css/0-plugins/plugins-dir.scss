@@ -1,0 +1,7 @@
+@import 'normalize';
+@import 'bourbon/bourbon';
+@import 'base/base'; //bitters, has dependency on bourbon
+
+//settings for neat visual grid
+$visual-grid: true !global;
+@import 'neat/neat';
